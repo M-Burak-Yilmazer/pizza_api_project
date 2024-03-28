@@ -7,7 +7,7 @@ const Token = require("../controllers/token");
 /* ------------------------------------------------------- */
 
 /* ------------------------------------------------------- */
-module.exports = router;
+
 
 router.route("/").get(Token.list).post(Token.create);
 
@@ -17,3 +17,5 @@ router
   .put(Token.update)
   .patch(Token.update)
   .delete(Token.delete);
+
+  module.exports = router;
